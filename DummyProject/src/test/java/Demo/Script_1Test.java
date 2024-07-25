@@ -8,6 +8,7 @@ public class Script_1Test {
 	public void scriptM1Test() {
 		System.out.println("script 1 is executed");
 		//poll scm execution
+		//2nd poll
 	}
 
 }
