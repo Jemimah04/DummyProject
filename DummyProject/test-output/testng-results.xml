@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-25T19:04:04 IST" name="Default suite" finished-at="2024-07-25T19:04:19 IST" duration-ms="14426">
+    <groups>
+    </groups>
+    <test started-at="2024-07-25T19:04:04 IST" name="Default test" finished-at="2024-07-25T19:04:19 IST" duration-ms="14426">
+      <class name="Demo.CreateCampaignTest">
+        <test-method is-config="true" signature="bs()[pri:0, instance:Demo.CreateCampaignTest@359df09a]" started-at="2024-07-25T19:04:04 IST" name="bs" finished-at="2024-07-25T19:04:04 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bs -->
+        <test-method is-config="true" signature="bt()[pri:0, instance:Demo.CreateCampaignTest@359df09a]" started-at="2024-07-25T19:04:04 IST" name="bt" finished-at="2024-07-25T19:04:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method is-config="true" signature="bc()[pri:0, instance:Demo.CreateCampaignTest@359df09a]" started-at="2024-07-25T19:04:04 IST" name="bc" finished-at="2024-07-25T19:04:06 IST" duration-ms="2074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bc -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:Demo.CreateCampaignTest@359df09a]" started-at="2024-07-25T19:04:06 IST" name="bm" finished-at="2024-07-25T19:04:09 IST" duration-ms="2942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="createCampaignTest()[pri:0, instance:Demo.CreateCampaignTest@359df09a]" started-at="2024-07-25T19:04:09 IST" name="createCampaignTest" finished-at="2024-07-25T19:04:17 IST" duration-ms="7964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCampaignTest -->
+        <test-method is-config="true" signature="am()[pri:0, instance:Demo.CreateCampaignTest@359df09a]" started-at="2024-07-25T19:04:17 IST" name="am" finished-at="2024-07-25T19:04:18 IST" duration-ms="1137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="ac()[pri:0, instance:Demo.CreateCampaignTest@359df09a]" started-at="2024-07-25T19:04:18 IST" name="ac" finished-at="2024-07-25T19:04:19 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ac -->
+        <test-method is-config="true" signature="at()[pri:0, instance:Demo.CreateCampaignTest@359df09a]" started-at="2024-07-25T19:04:19 IST" name="at" finished-at="2024-07-25T19:04:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
+        <test-method is-config="true" signature="as()[pri:0, instance:Demo.CreateCampaignTest@359df09a]" started-at="2024-07-25T19:04:19 IST" name="as" finished-at="2024-07-25T19:04:19 IST" duration-ms="241" status="FAIL">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'qspiders']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'qspiders'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+at Generic_Utilities.DataBaseUtility.dataBaseClose(DataBaseUtility.java:25)
+at Generic_Utilities.BaseClass.as(BaseClass.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- as -->
+      </class> <!-- Demo.CreateCampaignTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
