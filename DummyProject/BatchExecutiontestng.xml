@@ -5,6 +5,7 @@
     <classes>
       <class name="Demo.Script_1Test"/>
       <class name="Demo.Script_2Test"/>
+<class name="CreateCampaignTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

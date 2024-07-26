@@ -38,7 +38,8 @@ public class BaseClass {
 	}
 	@BeforeClass
 	public void bc() throws Throwable {
-		String BROWSER = flib.getKeyAndValueData("browser");
+		String BROWSER =System.getProperty("browser");
+		//String BROWSER = flib.getKeyAndValueData("browser");
 		if (BROWSER.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -57,9 +58,12 @@ public class BaseClass {
 	}
 	@BeforeMethod
 	public void bm() throws Throwable {
-	String URL = flib.getKeyAndValueData("url");
-   	String USERNAME = flib.getKeyAndValueData("username");
-      String PASSWORD = flib.getKeyAndValueData("password");
+//	String URL = flib.getKeyAndValueData("url");
+//   	String USERNAME = flib.getKeyAndValueData("username");
+//      String PASSWORD = flib.getKeyAndValueData("password");
+		String URL=System.getProperty("url");
+		String USERNAME=System.getProperty("username");
+		String PASSWORD= System.getProperty("password");
 
       	wlib.maximizeWindow(driver);
 		wlib.waitForElementToLoad(driver);
